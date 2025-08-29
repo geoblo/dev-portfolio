@@ -51,6 +51,14 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+.title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #333;
+  margin: 24px auto 0;
+}
 
 .animate-flash {
   animation-name: flash;
