@@ -42,6 +42,8 @@ a {
 .animate-flash {
   animation-name: flash;
   animation-duration: 0.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: cubic-bezier(.43,.19,.02,1);
 }
 
 /* HEADER */
