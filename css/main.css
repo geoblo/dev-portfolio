@@ -341,9 +341,63 @@ header nav ul li a:hover::after {
 .project .port .port__text li span {
   font-weight: bold;
 }
+.project .port .btn-group {
+  display: flex;
+  /* column-gap: 40px; */
+}
+/* 또는 */
+.project .port .btn-group .btn:first-child {
+  margin-right: 40px;
+}
 
 
+/* MODAL */
+#modal {
+  /* Quiz: 화면(뷰포트) 전체 영역 덮기 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#modal.show {
+  display: flex;
+}
+#modal .modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  /* 고정 길이 */
+  /* width: 800px; */
+  /* 상대 길이 */
+  width: 60%;
+}
+#modal .modal-header {
+  padding: 16px;
+  background-color: #222;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#modal .modal-header .btn-close {
+  font-size: 30px;
+  cursor: pointer;
+}
+#modal .modal-header .btn-close:hover {
+  color: #aaa;
+}
+#modal .modal-body {
+  padding: 16px;
+}
 
 
 
