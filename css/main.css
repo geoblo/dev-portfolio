@@ -145,42 +145,60 @@ header nav ul li a:hover::after {
 .about {
   padding: 150px 0;
 }
-.about  .about__wrapper {
+.about > .inner {
+  position: relative;
+}
+.about .about__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.about  .about__wrapper .about__img {
+.about .about__wrapper .about__img {
   width: 40%;
 }
-.about  .about__wrapper .about__img img {
+.about .about__wrapper .about__img img {
   width: 100%;
   border-radius: 50%;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
 }
-.about  .about__wrapper .about__text {
+.about .about__wrapper .about__text {
   width: 40%;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.about  .about__wrapper .about__text .slogan {
+.about .about__wrapper .about__text .slogan {
   font-size: 35px;
   font-weight: bold;
 }
-.about  .about__wrapper .about__text h3 {
+.about .about__wrapper .about__text h3 {
   font-size: 20px;
   font-weight: 600;
 }
-.about  .about__wrapper .about__text h4 {
+.about .about__wrapper .about__text h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-.about  .about__wrapper .about__text li {
+.about .about__wrapper .about__text li {
   line-height: 1.8;
 }
-
+.about .about__btn {
+  position: absolute;
+  right: 30px;
+  bottom: -30px;
+}
+/* .about .about__btn a {
+  display: flex;
+  align-items: center;
+} */
+/* flex를 쓰던가 아니면 아래와 같이 인라인 요소로 다시 원복하고 vertical-align 사용 */
+.about .about__btn img {
+  display: inline;
+  vertical-align: middle;
+  width: 28px;
+  margin-right: 10px;
+}
 
 
 
