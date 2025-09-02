@@ -404,6 +404,17 @@ header nav ul li a:hover::after {
   width: 30px;
 }
 
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #fff;
+}
+footer .copyright {
+  text-align: center;
+  font-weight: 600;
+  line-height: 200px;
+}
+
 /* MODAL */
 #modal, #imageModal {
   /* Quiz: 화면(뷰포트) 전체 영역 덮기 */
@@ -461,7 +472,26 @@ header nav ul li a:hover::after {
   padding: 16px;
 }
 
+/* SCROLL TO TOP */
+#toTop {
+  width: 42px;
+  height: 42px;
+  background-color: #fff8e8;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
 
+  /* Quiz: 아이콘 정중앙 정렬 + 오른쪽 하단(30, 30) 배치 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#toTop .material-symbols-outlined {
+  /* 수직 정렬 맞추기 */
+  /* display: block; */
+  /* 또는 글자 요소의 수직 정렬 */
+  line-height: 42px;
+}
 
 
 
